@@ -1,0 +1,221 @@
+
+   /*HTML TAGS*/
+body{
+  background-image: url("images/bg-bottom.svg"), url("images/bg-top.svg");
+  background-color: hsl(240, 78%, 98%);
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+h2{
+   font-size: 40px;
+}
+
+h3{
+   font-size: 20px;
+   padding-top: 60px;
+   line-height: 0.1;
+}
+
+hr{
+   width: 80%;
+}
+
+span{
+   font-size: 40px;
+   position: relative;
+   bottom: 10px;
+   right: 2px;
+}
+
+   /*TOGGLE BUTTON*/
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right top, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.monthly{
+   position: absolute;
+   left: 845px;
+   top: 127px;
+   
+}
+.annual{
+   position: absolute;
+   left: 655px;
+   top: 125px;
+}
+
+   /*PRICING SECTION*/
+.basic{
+   background-color: white;
+   border-radius: 10px;
+   position: relative;
+   left: 250px;
+   top: 30px;
+   height: 500px;
+   width: 350px;
+}
+.prof{
+  background-image: linear-gradient(to right top, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  left: 600px;
+  bottom: 500px;
+  height: 550px;
+  width: 350px; 
+  padding-top: 10px;
+}
+.master{
+   background-color: white;
+   border-radius: 10px;
+   position: relative;
+   left: 950px;
+   bottom: 1050px;
+   height: 500px;
+   width: 350px;
+}
+
+.btn{
+   background-image: linear-gradient(to right top, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+   border-radius: 10px;
+   border-style: none;
+   width: 300px;
+   height: 50px;
+   margin-top: 30px;
+}
+
+.btn:hover{
+   background-image: none;
+   background-color: transparent;
+   border-style: solid;
+}
+.btn-pro{
+   background-image: none;
+   background-color: white;
+   /*margin-top: 45px;*/
+}
+
+.heading{
+   margin-top: 60px;
+}
+
+.price{
+   font-size: 70px;
+   font-weight: bolder;
+   line-height: 0.1;
+}
+
+.attribution{
+   position: absolute;
+   top: 900px;
+   left: 550px;
+}
+
+/*Media Query*/
+@media (max-width:500px){ 
+   .monthly{
+   position: absolute;
+   left:60%;
+   top: 133px;
+      
+   }
+   .annual{
+      position: absolute;
+      left: 25%;
+      top: 133px;
+   }
+   .basic{
+      background-color: white;
+      border-radius: 10px;
+      position: relative;
+      left: 16%;
+      top: 30px;
+      height: 500px;
+      width: 350px;
+   }
+   .prof{
+     background-image: linear-gradient(to right top, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+     border-radius: 10px;
+     color: white;
+     position: relative;
+     left: 16%;
+     top: 70px;
+     height: 520px;
+     width: 350px; 
+   }
+   .master{
+      background-color: white;
+      border-radius: 10px;
+      position: relative;
+      left: 16%;
+      top: 100px;
+      height: 500px;
+      width: 350px;
+   }
+   .attribution{
+   position: absolute;
+   top: 1930px;
+   left: 8%;
+}
+}
