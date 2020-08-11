@@ -189,7 +189,7 @@ input:checked + .slider:before {
       background-color: white;
       border-radius: 10px;
       position: relative;
-      left: 16%;
+      left: 6%;
       top: 30px;
       height: 500px;
       width: 350px;
@@ -199,7 +199,7 @@ input:checked + .slider:before {
      border-radius: 10px;
      color: white;
      position: relative;
-     left: 16%;
+     left: 6%;
      top: 70px;
      height: 520px;
      width: 350px; 
@@ -208,7 +208,7 @@ input:checked + .slider:before {
       background-color: white;
       border-radius: 10px;
       position: relative;
-      left: 16%;
+      left: 6%;
       top: 100px;
       height: 500px;
       width: 350px;
